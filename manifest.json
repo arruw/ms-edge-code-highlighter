@@ -1,0 +1,20 @@
+{
+    "name" : "Code Highlighter",
+    "description": "Multi-language code highlighter extension for Microsoft Edge",
+    "version" : "1.0.0.0",
+    "author" : "Matjaž Mav",
+    "default_locale": "en",
+    
+    "icons" : {
+        "16" : "icons/icon_16.png",
+        "48" : "icons/icon_48.png",
+        "128" : "icons/icon_128.png"
+    },
+
+    "content_scripts" : [{
+            "js": ["libs/jquery/jquery.js", "libs/google-code-prettify/prettify.js", "viewer.js"],
+            "css": ["libs/google-code-prettify/prettify-visual-studio-white.css"],
+            "matches" : ["*://*/*"]
+        }
+    ]
+}
